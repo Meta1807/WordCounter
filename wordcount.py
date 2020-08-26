@@ -12,7 +12,7 @@ def hitung_kata(stringFile):
 
     # Split string into Python list
     stringList = string.split()
-    # Word analysis algorithm: if matching key already exists, increments value by 1, else initiate a new key with starting value of 1
+    # Word counting algorithm: if matching key already exists, increments value by 1, else initiate a new key with starting value of 1
     for index, item in enumerate(stringList):
         if item.lower() in wordDict.keys():
             wordDict[item.lower()] += 1
